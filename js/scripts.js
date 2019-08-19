@@ -2409,14 +2409,14 @@ mr = (function (mr, $, window, document){
 		  	});
 
 		  	if($('.radial').length){
-		  		mr.easypiecharts.init();
+		  		mr.easypiecharts.init($);
 		  		mr.easypiecharts.activate();
 		  		mr.scroll.listeners.push(mr.easypiecharts.activate);
 		  	}
 
 	  };
 
-	  mr.easypiecharts.init = function(){
+	  mr.easypiecharts.init = function($){
 
 			mr.easypiecharts.pies = [];
           

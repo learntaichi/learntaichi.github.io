@@ -1,7 +1,6 @@
 /*! -- Stack Notifications -- */
 
 .notification{
-	margin: @base-line-height;
 	box-shadow: none;
 	&:not([class*='bg--']){
 		background: none;
@@ -12,6 +11,14 @@
 	>.feature, .feature__body{
 		margin-bottom: 0;
 	}
+}
+
+
+.notification[class*='col-']{
+  margin: 0;
+  .boxed{
+    border-radius: 0;
+  }
 }
 
 .search-box{
